@@ -1,0 +1,20 @@
+<h1>Product List</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Manufacturing Date</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products$ | async ">
+      <td>{{product.id}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.mfd | date:'dd-MMM-yyyy'}}</td>
+      <td>{{product.price| currency}}</td>
+    </tr>
+  </tbody>
+</table>

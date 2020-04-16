@@ -1,0 +1,35 @@
+{
+  "npmScope": "nxworkspace",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "nxdemo": {
+      "tags": []
+    },
+    "nxdemo-e2e": {
+      "tags": [],
+      "implicitDependencies": ["nxdemo"]
+    },
+    "ecommerce": {
+      "tags": []
+    },
+    "ecommerce-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ecommerce"]
+    },
+    "core": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    }
+  }
+}
